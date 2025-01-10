@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar for the homepage -->
+    <header class="navbar"> 
+        <div class="logo">Gamathon</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tictac.html">Tic Tac Toe</a>
+            <a href="rockpaper.html">Rock Paper Scissors</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- This is for the welcome message -->
+        <section class="welcome-section" style="margin-top: 2rem;">
+            <h1>Welcome to Gamathon!</h1>
+            <p style="font-size: 1.5rem; margin-top: 0.5rem;">Gamathon is your one-stop hub for fun and engaging games. Explore our collection of classic and modern games to challenge your skills and have a great time!</p>
+        </section>
+
+        <section class="game-buttons" style="margin-top: 0.4rem;">
+            <h2>Select a Game to Play:</h2>
+            <div class="button-container" style="margin-top: 1rem;">
+                <button onclick="navigateToPage('tictac.html')">Tic Tac Toe</button>
+                <button onclick="navigateToPage('rockpaper.html')">Rock Paper Scissors</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function navigateToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

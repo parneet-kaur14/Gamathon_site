@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar for this game -->
+    <header class="navbar">
+        <div class="logo">Gamathon</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tictac.html">Tic Tac Toe</a>
+            <a href="rockpaper.html">Rock Paper Scissors</a>
+        </nav>
+    </header>
+
+    
+
+    <!-- Game Box for game -->
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+
+    <div class="scoreboard">
+        <div class="score-container">
+            <h2>You</h2>
+            <div id="player-score" class="score-box">0</div>
+        </div>
+        <div class="score-container">
+            <h2>Computer</h2>
+            <div id="computer-score" class="score-box">0</div>
+        </div>
+    </div>
+        <div class="emoji-container">
+            <div id="player-choice" class="emoji">🤚</div>
+            <div id="computer-choice" class="emoji">🤚</div>
+        </div>
+
+        <div class="buttons-container">
+            <button class="btn" onclick="playGame('rock')">🪨 Rock</button>
+            <button class="btn" onclick="playGame('paper')">📄 Paper</button>
+            <button class="btn" onclick="playGame('scissors')">✂️ Scissors</button>
+        </div>
+
+        <div id="result" class="result">
+            <p>Choose your move!</p>
+        </div>
+
+        <button class="reset-btn" onclick="resetGame()">Reset Game</button>
+
+    </div>
+
+    <script src="rockpaper.js"></script>
+</body>
+</html>

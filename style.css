@@ -1,0 +1,342 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general body of the website */
+body {
+    background-color: #548687;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+/* To style navigation bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FFD700;
+}
+
+/* Welcome Page */
+main {
+    text-align: center;
+    margin-top: 7rem;
+    padding: 0 1rem;
+}
+
+.welcome-section {
+    margin-bottom: 2rem;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.welcome-section p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    line-height: 1.8;
+    color: #f0f0f0;
+}
+
+/* Game Name Buttons */
+.game-buttons h2 {
+    font-size: 2rem;
+    color: #FFD700; 
+    margin-bottom: 1.5rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.button-container button {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    background-color: #FFD700;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+.button-container button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#new-btn:hover {
+    background-color: #555;
+}
+
+#dynamic-message {
+    margin-top: 1.5rem;
+}
+
+.hello-message {
+    font-size: 1.5rem;
+    color: green;
+    font-weight: bold;
+}
+
+
+
+
+/* Tic Tac Toe Game CSS starts*/
+.thecontainer {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thegame {
+    background-color: #548687;
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.thebox {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: beige;
+    border: none;
+    border-radius: 4px;
+    color: rgb(70, 70, 241);
+    font-size: 13vmin;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.thebox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#thereset {
+    padding: 1rem;
+    font-size: 1.25rem;
+    margin-top: 3rem;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game-buttons h2 {
+    font-size: 2rem;
+    color: #FFD700; 
+    margin-bottom: 2rem; 
+}
+
+.hover-button {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.hover-button:hover {
+    transform: scale(1.1);
+    background-color: #555;
+}
+
+
+/* Rock Paper Scissors Page Start */
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 50px;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.score-box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #FFD700;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.emoji-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.emoji {
+    font-size: 9rem;
+    transition: transform 0.2s ease;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 24px 24px;
+    font-size: 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.result p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+.reset-btn {
+    padding: 1rem 1rem; 
+    font-size: 2rem; 
+    background-color: #021002; 
+    color: white; 
+    border-radius: 8px; 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.reset-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1); 
+}
+
+/* For Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar .logo {
+        margin-bottom: 1rem;
+    }
+
+    main {
+        margin-top: 8rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    #game {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+    }
+
+    .welcome-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-section p {
+        font-size: 1rem;
+    }
+
+    .button-container button {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    #game {
+        width: 100%;
+    }
+}
